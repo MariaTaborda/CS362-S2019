@@ -26,9 +26,9 @@ int main (){
 		outpost, sea_hag, smithy, tribute, village}; //random set for supplies
 	int treassurecount1 =0;
 	int treassurecount2 =0;
-			
+	printf ("ADVENTURER TEST 2\n");
 	initializeGame(numberofPlayers, k, 2000, &state); // this will save the original state of the game after being initialized
-	printf ("Game initialized\n");
+	printf ("Game initialized Succesfully\n");
 	
 	memcpy (&test1, &state, sizeof(struct gameState)); // copy the initialized game into a test struct to run unit test
 	//memcpy (&test2, &state, sizeof(struct gameState));
