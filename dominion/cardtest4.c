@@ -30,7 +30,7 @@ int main (){
 	int CopperCount1p3 =0;
 	int CopperCount2p3 =0;
 
-	printf ("CUTPURSE TEST\n");			
+	printf ("SEA HAG TEST\n");			
 	initializeGame(numberofPlayers, k, 2000, &state); // this will save the original state of the game after being initialized
 	printf ("Succesfully initialized game \n");
 	
@@ -76,23 +76,18 @@ int main (){
 	CopperCount2p3 = CopperCount (state, 2);
 
 	if (CoinCount1p1 == CoinCount2p1-2){
-	printf ("Test 1 passed, Cutpurse has correctly updated coin count for player using it\n");
+	printf ("Test 1 passed, sea_hag has correctly updated coin count for player using it\n");
 	}
 	else{
 	printf ("Test 1 failed, player's coin count was not updated\n ");
 	}
 
 	if (CopperCount1p2 == CopperCount2p2+1 || CopperCount1p2 == 0) {
-	printf ("Test 2 passed, Cutpurse has correctly handled player with no copper\n");
+	printf ("Test 2 passed, sea_hag has correctly handled curses\n");
 	}
 	else
-	printf ("Test 2 failed, Cutpurse has not correctly handled player with no copper\n");
+	printf ("Test 2 failed, seahag has not handled curses correctly\n");
 	
-	if (CopperCount1p3 == CopperCount2p3+1 || CopperCount1p3 == 0) {
-	printf ("Test 3 passed, Cutpurse has correctly affected other player's copper count\n");
-	}
-	else
-	printf ("Test 2 failed, Cutpurse has not correctly affected other player's copper count\n");
 	
 	return 0;
 }
