@@ -58,7 +58,6 @@ int main (){
 	CoinCount1p1 = state.coins;
 	//printf ("Coin count1 = %d", CoinCount1p1);
 	CopperCount1p2 = CopperCount (state, 1);
-	CopperCount1p3 = CopperCount (state, 2);
 
 	cardEffect (cutpurse, 0, 0, 0, &state, 0, 0);
 //	printf ("Coin count2 = %d", CoinCount2p1);
@@ -71,7 +70,7 @@ int main (){
 //	printf ("Coin count2 = %d", CoinCount2p1);
 
 	CopperCount2p2 = CopperCount (state, 1);
-	CopperCount2p3 = CopperCount (state, 2);
+	CopperCount2p3 = CopperCunt (state, 2);
 
 	if (CoinCount1p1 == CoinCount2p1-2){
 	printf ("Test 1 passed, sea_hag has correctly updated coin count for player using it\n");
