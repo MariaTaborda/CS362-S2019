@@ -681,7 +681,7 @@ int SmithyCard(int currentPlayer, struct gameState *state, int handPos)
     drawCard(currentPlayer, state);
   }   
   //discard card from hand
-  discardCard(handPos, currentPlayer, state, 0);
+ // discardCard(handPos, currentPlayer, state, 0);
   return 0;
 }
 
@@ -708,7 +708,7 @@ int CutpurseCard (int currentPlayer, struct gameState *state, int handPos)
   for (i = 0; i < state->numPlayers; i++){
     if (i != currentPlayer) {
       for (j = 0; j < state->handCount[i]; j++) {
-        if (state->hand[i][j] == copper){
+        if (state->hand[j][i] == copper){
           discardCard(j, i, state, 0);
           break;
         }
