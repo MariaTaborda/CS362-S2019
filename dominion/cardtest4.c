@@ -27,8 +27,6 @@ int main (){
 	int CoinCount2p1 =0;
 	int CopperCount1p2 =0;
 	int CopperCount2p2 =0;
-	int CopperCount1p3 =0;
-	int CopperCount2p3 =0;
 
 	printf ("SEA HAG TEST\n");			
 	initializeGame(numberofPlayers, k, 2000, &state); // this will save the original state of the game after being initialized
