@@ -656,7 +656,8 @@ int AdventurerCard (struct gameState *state, int currentPlayer, int cardDrawn, i
 
     drawCard(currentPlayer, state);
     cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
-    if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
+    	//if (cardDrawn == copper)
+	if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
       drawntreasure++;
     else{
       temphand[z]=cardDrawn;
@@ -712,7 +713,7 @@ int CutpurseCard (int currentPlayer, struct gameState *state, int handPos)
           discardCard(j, i, state, 0);
           break;
         }
-        if (j == state->handCount[i]){
+        if (j == state->handCount[i]-1){
           for (k = 0; k < state->handCount[i]; k++){
             if (DEBUG)
             printf("Player %d reveals card number %d\n", i, state->hand[i][k]);
